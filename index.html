@@ -1,0 +1,1517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frappe Partners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+color:white;
+background-color:teal;
+    }
+    h1 {
+      text-align:;
+      
+    }
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    select {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .partners-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .partner-card {
+      background: #ffff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 30%;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+color:black;
+background-color:white;
+      
+      
+    }
+
+    .partner-card:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsive: 2 per row on tablet, 1 on mobile */
+    @media (max-width: 900px) {
+      .partner-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .partner-card {
+        width: 90%;
+      }
+    }
+
+    .details-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(255,255,255,0.97);
+      z-index: 1000;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-sizing: border-box;
+background-color:#1234;
+
+    }
+
+   .details-content {
+  background: teal;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;         /* Allows scroll if too long */
+  overflow-y: auto;         /* Enables vertical scroll */
+  white-space: pre-wrap;    /* Preserves line breaks */
+  word-break: break-word;   /* Wraps long words */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+  text-align: left;
+}
+
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      cursor:pointer;
+      color: #555;
+
+    }
+
+
+    .details-content h2 {
+      margin-top:0;
+    }
+
+    .details-content p {
+      font-size: 15px;
+      margin: 8px 0;
+    }
+    #partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  #partners-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.partner-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+}
+
+.partner-card {
+  width: 300px; /* Adjust as needed */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+.heading{
+    font-size:40px;
+    text-align:left;
+
+    
+}
+.imglogo{
+    display:flex;
+    justify-content: space-between;
+}
+
+ .footer {
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        .quote {
+            font-style: italic;
+            color: black;
+            margin-top: 30px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            padding:10px;
+            position:flex;
+              flex-direction: column;
+      justify-content: center;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+  </style>
+</head>
+<body>
+<h2>Frappe<h2>
+  <h1 class="heading">Find a local Frappe Partner</h1>
+<center><input type="text" id="search-bar" placeholder="Search Partner..." 
+  style="width: 100%; max-width: 400px; padding: 10px 15px; font-size: 16px; border: 2px solid #ccc; border-radius: 8px; margin-bottom: 20px; outline: none;"
+></center>
+
+
+
+  <h1></h1>
+  <!-- Filters -->
+  <div class="filter-container" style="color:black">
+    <select id="domainFilter">
+      <option value="All">All Domains</option>
+      <option>Manufacturing</option>
+      <option>Education</option>
+      <option>Services</option>
+      <option>Distribution</option>
+      <option>Healthcare</option>
+      <option>Retail</option>
+      <option>Agriculture</option>
+    </select>
+
+    <select id="countryFilter">
+      <option value="All">All Countries</option>
+      <option>Bangladesh</option>
+      <option>Congo - Kinshasa</option>
+      <option>Egypt</option>
+      <option>Germany</option>
+      <option>India</option>
+      <option>Indonesia</option>
+      <option>Iraq</option>
+      <option>Kenya</option>
+      <option>Kuwait</option>
+      <option>Libya</option>
+      <option>Pakistan</option>
+      <option>Philippines</option>
+      <option>Qatar</option>
+      <option>Saudi Arabia</option>
+      <option>Singapore</option>
+      <option>Tanzania</option>
+      <option>Uganda</option>
+      <option>United Arab Emirates</option>
+      <option>United States</option>
+    </select>
+
+    <select id="tierFilter">
+      <option value="All">All   Tiers</option>
+      <option>Gold</option>
+      <option>Silver</option>
+      <option>Bronze</option>
+    </select>
+  </div>
+<div id="partners-container">
+  <!-- Partner Cards -->
+
+  <div class="partners-wrapper" id="partnerList">
+    <!-- Example cards (duplicate these and update content as needed) -->
+
+  
+ <div class="partner-card" data-name="New Indictrans Technologies Pvt Ltd ✅" data-domain="Services,Manufacturing,Distribution,Retail" data-country="India" data-tier="Gold" 
+data-about="Official Frappe Partner Indictrans is the world's leading and India’s 1st ERPNext Certified Gold Partner.
+
+Proud recipient of the 2022 Frappe’s Best Growth Partner Award.
+
+At Indictrans, we're not just partners; we're among the elite pioneers in ERPNext implementation, the premier 100% Open Source ERP. Our expertise has been honed over 13 years of in-depth collaboration with the Frappe + ERPNext product, mastering both ERPNext and Frappe like only a few can. Our journey is marked by over 400+ successful ERPNext projects across more than 75+ countries, including major markets like the US, Europe, the Middle East, South Africa, Singapore, and our rapidly growing homeland, India.
+
+Indictrans is headquartered in Pune, India, with our team's presence spanning the country. To optimally serve our clients, we have branch offices in Mumbai and Hyderabad, and our international reach extends to a branch office in Mauritius. Our domain expertise is comprehensive, covering Manufacturing, Trading & Sales, Engineering Procurement and Construction (EPC), Retail, Logistics, and Construction.
+
+What we offer goes beyond a mere ERP solution; it's a transformative journey. We guide you in selecting the best Open Source ERP and ensure a seamless, rewarding end-user experience. Our services encompass a full suite of ERPNext & Frappe capabilities, including Assessment Studies, Implementation, Development, Integration, Customization, and Ongoing Support.
+
+Our skilled team of over 80+ ERPNext & Frappe framework professionals are committed to enhancing your business experience. With Certified Functional Consultants in various sectors, we are uniquely positioned to craft the ideal ERP solution for your business. Our team includes Business Analysts, Developers, Solution Architects, Implementation Engineers, DevOps, Support Staff, and other Technical Teams, all specializing in ERPNext and Frappe technologies. Comprising Certified Chartered Accountants, top MBA graduates, Engineers, and more, we are all dedicated to providing you with the best service.
+
+At Indictrans, we're focused not just on delivering services but on forging partnerships that pave the way to success. Are you ready to join us on this journey and discover the zenith of ERP solutions? Let's turn your business aspirations into reality, together!" data-website="https://indictranstech.com/" data-email="contact@indictranstech.com">
+     <div class="imglogo">
+      <img src="/files/Indictrans_Square_Small.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>New Indictrans Technologies Pvt Ltd</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-gold">GOLD</p>
+    </div>
+<!--about fill--1#################-->
+
+<div class="partner-card" data-name="Aakvatech Limited" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Tanzania" data-tier="Gold" 
+data-about="Official Frappe Partner Aakvatech Limited is a unique start-up Tanzanian company that is focused on getting technology work for the company. It has been formed to enable companies to focus on their business and bring efficiency and transformation through effective technology
+
+
+
+Over the past 20 years, our team has worked with amazing businesses, non-profits, academic institutions, corporates and large government agencies in Tanzania and regional Africa.
+
+
+
+Aakvatech is an authorized partner of Frappe Technologies, the original developers of the ERPNext ERP system. We have added country-specific enhancements that work alongside specialise in ERP Implementation using ERPNext as our base platform and extending it with customised apps that are specific to any industry or business." data-website="http://www.aakvatech.com" data-email="info@aakvatech.com">
+     <div class="imglogo">
+      <img src="/files/aakvatech.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Aakvatech Limited</h3>
+      <p>🇹🇿 Tanzania</p>
+      <p class="tier-gold">GOLD</p>
+    </div>
+<!--about fill--2#################-->
+
+<div class="partner-card" data-name="Craft Interactive Technology LLC" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail" data-country="United Arab Emirates" data-tier="Gold" 
+data-about="Official Frappe Partner Craft Interactive Technology LLC, established in 2017 with offices in the Middle East (Dubai and Abu Dhabi) and India (Kozhikode | Coimbatore | Bengaluru) , proudly holds the exclusive position of being the only silver partner of Frappe in the GCC. The founders of the company bring a wealth of experience as seasoned professionals who have played pivotal roles in senior management positions across various multinational corporations.
+
+Our team comprises professionals, including Chartered Accountants and Management graduates, boasting extensive experience in different verticals such as Manufacturing, Trading, and Services, with over 350 successful implementations. Craft Interactive Technology was founded with a clear vision: to deliver premier software solutions to start-ups, small, medium, and large enterprises.
+" data-website="https://craftinteractive.ae/" data-email="info@craftinteractive.ae">
+     <div class="imglogo">
+      <img src="/files/craft interactive.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Craft Interactive Technology LLC</h3>
+      <p>🇦🇪 United Arab Emirates</p>
+      <p class="tier-gold">GOLD</p>
+    </div>
+<!--about fill--3#################-->
+
+<div class="partner-card" data-name="Software@Work India. Pvt. Ltd" data-domain="Manufacturing,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Software At Work (I) Pvt. Ltd. has been an established software solution provider for 32+ years. We are the ERPNext Certified and Tally 5-Star Partner, assisting over 20,000+ businesses.
+
+S@W is geared toward a team of qualified chartered accountants, functional consultants, and software developers. Over the past decades, we have implemented solutions for various industries including - Engineering, chemicals, Plastic, Food, Packaging, FMCG, Distribution, Professional Services, NGO, Manufacturing & many more.
+
+Our focus is on offering rapidly deployable and affordable business software solutions. Our association with leading software companies globally enables us to offer the best business software products to customers.
+
+You can email us at erp@sawindia.com or call on +91 8169873702." data-website="https://www.sawindia.com" data-email="erp@sawindia.com">
+     <div class="imglogo">
+      <img src="/files/software@.png" alt="Partner Logo" style="width:170px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Software@Work India. Pvt. Ltd</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--4#################-->
+
+<div class="partner-card" data-name="Agkiya Technology and Consulting LLP" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Agkiya emerges as a fully owned subsidiary of SMBCATALYST, a distinguished name in the realm of Management Consulting. With a legacy spanning over a decade, SMBCATALYST has been a driving force behind countless businesses, catalyzing their strategies and fostering growth. Drawing from this extensive experience, the need for a technology partner that was not only business-oriented but also quality-centric became apparent. And thus, Agkiya was born.
+Rooted in the heart of SMBCATALYST's commitment to excellence, Agkiya was conceived to bridge the gap between vision and implementation. While strategizing and planning are vital, the technological execution is equally crucial. With the evolving digital landscape, the demand for a partner that could seamlessly fuse business acumen with cutting-edge technology solutions became evident."
+ data-website="https://www.agkiya.com/" data-email="sales@agkiya.com">
+      <div class="imglogo">
+      <img src="/files/Agkiya Logo.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Agkiya Technology and Consulting LLP</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill-5#################-->
+
+<div class="partner-card" data-name="Hybrowlabs Technologies" data-domain="Manufacturing,Education,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Hybrowlabs offers ERPNext development services to help businesses automate and organize their operations. Our experienced developers can implement, customize, integrate external apps and provide technical support and maintenance for ERPNext. Benefit from a wide range of features such as HR and payroll, sales and purchase, customer relationship management, and more.
+" data-website="https://hybrowlabs.com/ERPnext-development-services" data-email="chinmay@hybrowlabs.com">
+      <div class="imglogo">
+      <img src="/files/Hybrowlabs.png" alt="Partner Logo" style="width:150px;height:60px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Hybrowlabs Technologies</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--6#################-->
+
+<div class="partner-card" data-name="NestorBird" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Silver"
+data-about="Official Frappe Partner NestorBird is a Frappe Certified Partner and a leading company in North India, with more than 6 years of experience in serving ERPNext and Frappe Clients. The company has implemented more than 200 ERPNext projects in 20+ countries, including Germany, Jamaica, Vietnam, USA, UAE, Europe, Nepal, South Africa, Iraq, Saudi Arabia, Singapore, Thailand, and Pakistan.
+
+NestorBird has expertise across all domains, including Manufacturing, Healthcare, Education, Retail, Agriculture, Food, Distribution, Trading, Construction, and Non-Profits.
+
+We offer specialized end-to-end ERPNext services, including consultation, implementation, development, 3rd party software integration, customization, and ongoing support. Our team of certified professionals supports our customers globally."data-website="https://nestorbird.com" 
+data-email="sales@nestorbird.com ">
+      <div class="imglogo">
+      <img src="/files/nestor.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>NestorBird</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--7#################-->
+
+
+<div class="partner-card" data-name="Korecent" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="United States" data-tier="Silver" 
+data-about="Official Frappe Partner Korecent is a leading provider of ERPnext implementation and support solutions. Korecent has been working with ERPnext since 2014 and has gained extensive experience in delivering customized solutions to a wide range of businesses across various industry verticals.
+
+
+
+Our team of certified ERPnext professionals is dedicated to providing our clients with the highest level of service and support. We are proud to be CMMI level 3 certified, which is a testament to our commitment to quality and excellence in all aspects of our business.
+
+
+
+We have delivered more than 40 projects across UK, Germany, Sweden, Australia, Canada, the US, India, and Dubai. Our area of strength includes complete ERP designing incl BPMN, App modernization, Integration, business process mapping & automation, website and mobile application development, e-commerce, and CRM.
+
+
+
+Our major expertise is within Manufacturing, Aviation, Insurance, Services, Retail and Distribution/Supply-Chain.
+
+
+
+We understand that every business is unique, and therefore, we tailor our solutions to meet the specific needs of our clients. Our ERPnext solutions are designed to help businesses streamline their operations, improve efficiency and productivity, and achieve a competitive edge.
+
+
+
+At Korecent, we are dedicated to helping our clients achieve their business goals by providing them with the tools and support they need to succeed. With our extensive industry experience and commitment to quality, we are confident that we can deliver the best ERPnext solutions to meet the needs of your business. Contact us today to learn more about how we can help you achieve your business objectives."
+ data-website="https://korecent.com/" data-email="sales@korecent.com">
+     <div class="imglogo">
+      <img src="/files/Korecent Logo Primary (1).jpg" alt="Partner Logo" style="width:150px;height:60px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Korecent</h3>
+      <p>🇺🇸 United States</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--8#################-->
+
+<div class="partner-card" data-name="GreyCube Technologies" data-domain="Manufacturing,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Winner: Best Partner Award 2023
+
+GreyCube Technologies is the First Official Certified Partner. We are the longest serving partner, solely focused on Frappe, ERPNext since 2017 .
+
+Clients across 15+ countries, expertise across all domains ranging from SME to Enterprise, developed 250+ custom apps/ solutions.
+
+Engage with a highly experienced, intelligent & efficient team for the Implementation & customization of Frappe/ERPNext Solution at super fast speed.
+
+Domain expertise: Distribution, Services, Finance, 3PL, Manufacturing, Retail, Hospitality, Education & Healthcare
+
+Simplifying business
+
+Call Now: (+91) 99 24 34 3880
+Email: jignesh@greycube.in" 
+data-website="https://greycube.in" data-email="jignesh@greycube.in">
+    <div class="imglogo">
+      <img src="/files/greycube-logo.png" alt="Partner Logo" style="width:160px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>GreyCube Technologies</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--9#################-->
+
+<div class="partner-card" data-name="8848 Digital LLP" data-domain="Manufacturing,Services,Distribution,Retail,Healthcare" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner 8848 Digital LLP is a digital transformation leader that provides solutions to clients across industries, through a broad range of technology & digital services. We stand to guide enterprises with new age practices helping them leverage full potential in the digital era. Our digital transformation services include
+
+Intelligent Automation: Helping organizations automate systems improving their efficiency and accuracy.
+
+
+
+Product Engineering: Constantly bringing new innovations and refinements to complex digital product development lifecycle.
+
+
+
+UX Engineering: Empowering enterprises with best UX practices, for increased customer experiences, fueling business growth.
+
+
+
+Cloud Computing: Simplifying the complex process of cloud modernization to help enterprises stay ahead of the curve."
+ data-website="https://8848digital.com/erpnext" data-email="atul@8848digital.com">
+     <div class="imglogo">
+      <img src="/files/8848digital_logo.jpg" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>8848 Digital LLP</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--10#################-->
+
+<div class="partner-card" data-name="Tridots Tech Private Limited" data-domain="Manufacturing,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Tridots Tech is a technology consulting and software development company that specializes in providing customized solutions to businesses of all sizes. Founded in 2015 and based in India, Tridots Tech has a team of skilled and experienced professionals who are dedicated to delivering high-quality software products and services to its clients.
+
+The company's core expertise lies in web development, mobile app development, e-commerce development, custom software development, cloud computing, and digital marketing. They work with a range of technologies such as React, Angular, Node.js, Python, iOS, and Android, among others.
+
+Tridots Tech is committed to providing its clients with innovative solutions that help them achieve their business objectives. They follow a customer-centric approach, where they work closely with their clients to understand their unique business requirements, and then design and develop solutions that align with their specific needs.
+
+The company has worked with clients from various industries such as healthcare, e-commerce, education, finance, and more. Their clients include both small startups and large enterprises.
+
+Overall, Tridots Tech is a reliable and trusted technology partner for businesses looking to leverage technology to achieve their goals."
+ data-website="https://www.tridotstech.com" data-email="rajarajan@tridotstech.com">
+      <div class="imglogo">
+      <img src="/files/tridottech.png" alt="Partner Logo" style="width:190px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Tridots Tech Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--11#################-->
+
+<div class="partner-card" data-name="Digitalis Technologies Pvt Ltd" data-domain="Manufacturing,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner At DT, we offer a range of services designed to help businesses streamline their operations and improve their productivity. Our team has extensive experience in the ERPNext software and is committed to providing the best possible support and service to our clients.
+-ERPNext Implementation
+-Custom App development on Frappe Framework
+-Business Process Consulting and Advising
+-Continued Support Services
+-Data Migration Services." 
+data-website="https://www.digitalistech.com/" data-email="dipane@digitalistech.com">
+     <div class="imglogo">
+      <img src="/files/DT DIGITALIS 3.0 LOGO FULL NAME BLUE.png" alt="Partner Logo" style="width:130px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Digitalis Technologies Pvt Ltd</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--12#################-->
+
+<div class="partner-card" data-name="Promantia Business Solutions Pvt. Ltd." data-domain="Manufacturing,Services,Distribution,Retail" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner Promantia is a 10 year old company focussed on providing open source based business solutions to small and medium enterprises in India and around the world.
+
+We have implemented ERP, CRM, Doc Mgmt, eCommerce, Mobile and Analytics solutions for various customers .
+
+Our key strengths are strong understanding of generic business processes and analysis skills together with product knowledge and customization skills on the products that we specialize on, which enables us to develop fit-for-purpose solutions for our clients."
+ data-website="http://promantia.in/" data-email="info@promantia.com">
+      <div class="imglogo">
+      <img src="/files/promantia.png" alt="Partner Logo" style="width:170px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Promantia Business Solutions Pvt. Ltd.</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--12#################-->
+
+<div class="partner-card" data-name="Indiba Business Solutions" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner We Deliver Enterprise IT Solutions Globally
+Our core strength is around ERP solutions and ensuring that despite People and Process challenges we are able to deliver scalable and complex implementations.
+We also leverage IOT, Machine Learning, AI and Mobility capability to integrate to our Enterprise solution offerings." 
+data-website="https://www.ibsl-it.com/" data-email="asim@indibasolutions.com">
+      <div class="imglogo">
+      <img src="/files/indiba.png" alt="Partner Logo" style="width:120px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Indiba Business Solutions</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+
+<!--about fill--13#################-->
+
+<div class="partner-card" data-name="Wahni IT Solutions" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Silver" 
+data-about="Official Frappe Partner The power of Open Source and support from Frappe enabled us to become one of the preferred ERPNext implementation partners across the globe. We are one of the implementation partners focused on providing ERPNext implementations and a development & support center located in Kerala (www.wahni.io).
+Our implementation spans across in manufacturing domains including the Aluminum industry, Building materials manufacturing includes paints, steel windows, and FRP doors. We also specialized in mobile apps associated with ERPNext for FMCG sectors including the distribution domain also.
+We would like to hear from you to digitize your operations and to cater solutions in ERPNext. Fill out the contact form or you may directly call our consultants. Looking forward to hearing from you." 
+data-website="https://wahni.io" data-email="saumya@wahni.com">
+     <div class="imglogo">
+      <img src="/files/Wahni logo.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Wahni IT Solutions</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--14#################-->
+
+<div class="partner-card" data-name="Quark Cyber Systems FZC" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail" data-country="United Arab Emirates" data-tier="Silver" 
+data-about="Official Frappe Partner Quark Cyber Systems formerly Quark Computer Solutions L.L.C is a pioneer in Open Source Business Solutions in UAE and was one of the first to establish a business model around it since 2011. We have been committed to providing our clients with the best from the open-source world while helping them ease the technical and functional challenges they face.
+
+
+
+We have great expertise in custom developing frappe apps, tailoring ERPNext, integrations with IOT Devices (ANPR, Access Control, Facial Recognition, Biometric Devices ), Payment Gateways (AMWAL, Payfort), Government Digital Services (Planet Tax Refund), Food Aggregators (Talabat), Telematics (Etisalat, Du), Data Center Management (VMware), Identity Management (Active Directory)"
+ data-website="https://quarkcs.com/" data-email="vivek@quarkcs.com">
+      <div class="imglogo">
+      <img src="/files/quark.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Quark Cyber Systems FZC</h3>
+      <p>🇦🇪 United Arab Emirates</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--15#################-->
+
+<div class="partner-card" data-name="Go-Live Solutions KSA" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Saudi Arabia" data-tier="Silver" 
+data-about="Official Frappe Partner Welcome to Go-Live Solutions, your trusted ERPNext partner in Saudi Arabia specializing in a comprehensive suite of services tailored to meet your enterprise resource planning needs. With a dedicated team of experts and a proven track record, we are committed to helping your organization thrive through seamless ERP solutions.
+
+
+At Go-Live Solutions, we understand that implementing an ERP system is a critical step for any business, and it requires careful planning and execution. Our range of services encompasses every aspect of ERPNext, ensuring that your journey from concept to Go-Live is smooth and successful.
+
+
+Our Services Include:
+
+
+
+Implementation: We excel in guiding you through the entire implementation process, from defining your requirements to configuring the system to meet your unique business needs.
+
+Bug Fix: Our team is adept at identifying and resolving any issues that may arise, ensuring your ERPNext system functions flawlessly.
+
+Warranty: We offer comprehensive warranty services, giving you peace of mind that your ERP system is covered in case of unexpected issues.
+
+Support: Our support team is available to assist you with any questions or concerns, ensuring you have reliable assistance whenever you need it.
+
+Upgrade: We help you stay up-to-date with the latest ERPNext features and improvements through seamless upgrade services.
+
+Training: Our training programs are designed to empower your team with the knowledge and skills needed to maximize the benefits of ERPNext.
+
+Consultation: Our experts provide strategic guidance and consultation to help you make informed decisions about your ERP system.
+
+Data Migration: We facilitate the smooth transfer of your existing data into ERPNext, ensuring data integrity and continuity.
+
+Customization: Tailoring ERPNext to your specific needs is our forte. We provide custom development and configuration services to optimize your system.
+
+Installation: We handle the installation process, ensuring that ERPNext is set up correctly and efficiently.
+
+Configuration: We fine-tune the system settings to align with your business processes and requirements.
+
+Development: Our developers are skilled in creating custom features and functionalities to enhance your ERPNext experience.
+
+Integrations: We seamlessly integrate ERPNext with other applications and systems, streamlining your workflow and data flow.
+
+Hosting: We offer reliable hosting services to ensure your ERPNext system is always available and performing at its best.
+
+
+At Go-Live Solutions, we are dedicated to your success, and we take pride in our ability to transform your ERP vision into a reality. With our extensive experience and commitment to excellence, you can trust us to be your ERPNext partner of choice. Let us help you optimize your business processes, drive efficiency, and achieve your goals through the power of ERPNext." 
+data-website="https://www.golive-solutions.com" data-email="erpnext.ksa@golive-solutions.com">
+    <div class="imglogo">
+      <img src="/files/Go-Live Solutions Logo 1.jpg" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Go-Live Solutions KSA</h3>
+      <p>🇸🇦 Saudi Arabia</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--16#################-->
+
+<div class="partner-card" data-name="Navari Limited" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Kenya" data-tier="Silver" 
+data-about="Official Frappe Partner Navari provides ERP consultancy, implementation and customization services on ERPNext, with a focus on ERP Solutions for mid-sized and large enterprises."
+data-website="https://www.navari.co.ke/" data-email="solutions@navari.co.ke">
+      <div class="imglogo">
+      <img src="/files/NewNavariLogo.PNG" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Navari Limited</h3>
+      <p>🇰🇪 Kenya</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--17#################-->
+
+<div class="partner-card" data-name="LavaLoon" data-domain="Manufacturing,Education,Services,Distribution,Retail" data-country="Egypt" data-tier="Silver" 
+data-about="Official Frappe Partner In the fast-paced digital world, Lavaloon came with a vision: eliminating businesses' technical pains during their digital transformation. Over the years, we have evolved, adapting to the dynamic landscape of the software industry. Today, Lavaloon stands strong as a company, leveraging over 20 years of experience to provide software solutions across diverse business lines.
+
+
+
+Our passion lies in seamless system integration, delivering ready-made solutions that can be implemented in a few days. We aim to eliminate the need for expensive, high-end system integration, thereby saving our clients time, resources, and money. Our vision is to enrich the software industry by integrating with the world's leading systems, serving businesses worldwide efficiently."
+ data-website="https://www.lavaloon.com/" data-email="info@LavaLoon.com">
+      <div class="imglogo">
+      <img src="/files/LavaLoon.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>LavaLoon</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--18#################-->
+
+<div class="partner-card" data-name="Wahni IT Solutions FZE" data-domain="Manufacturing,Services,Distribution,,Retail" data-country="United Arab Emirates" data-tier="Silver" 
+data-about="Official Frappe Partner Wahni IT Solutions FZE is a premier IT solutions provider with a significant presence in the UAE, India, and Qatar. Our team consists of leadership-certified Frappe consultants and highly experienced professionals who have successfully executed over 100+ ERPNext implementations. We have a wealth of experience in implementing ERPNext for the manufacturing, trading, service, and retail industries. At Wahni IT Solutions, we are dedicated to delivering top-tier IT services and solutions, ensuring our clients achieve their business objectives with efficiency and innovation."
+ data-website="https://wahni.ae" data-email="shajeer@wahni.ae">
+      <div class="imglogo">
+      <img src="/files/Wahni logo.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Wahni IT Solutions FZE</h3>
+      <p>🇦🇪 United Arab Emirates</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--19#################-->
+
+<div class="partner-card" data-name="ERPCloud.Systems" data-domain="Manufacturing,Services,Distribution,,Retail" data-country="Egypt" data-tier="Silver" 
+data-about="Official Frappe Partner 𝗘𝗥𝗣𝗖𝗹𝗼𝘂𝗱.𝗦𝘆𝘀𝘁𝗲𝗺𝘀 is a trusted and strategic partner of ERPNext, specializing in delivering comprehensive enterprise resource planning (ERP) solutions. We provide end-to-end services, including in-depth business analysis, seamless implementation, and advanced customization, ensuring that organizations maximize the full potential of ERPNext.
+
+With a strong commitment to innovation,𝗘𝗥𝗣𝗖𝗹𝗼𝘂𝗱.𝗦𝘆𝘀𝘁𝗲𝗺𝘀 also develops cutting-edge 𝗙𝗹𝘂𝘁𝘁𝗲𝗿 𝗠𝗼𝗯𝗶𝗹𝗲 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 tailored for ERPNext, enabling businesses to enhance operational efficiency, improve user experience, and achieve greater agility in managing their processes. Our expertise lies in bridging the gap between technology and business needs, empowering companies with scalable, intuitive, and future-ready ERP solutions.
+
+At 𝗘𝗥𝗣𝗖𝗹𝗼𝘂𝗱.𝗦𝘆𝘀𝘁𝗲𝗺𝘀, we strive to deliver excellence by leveraging deep industry knowledge and technical proficiency, making ERPNext an integral part of business success.
+
+At 𝗘𝗥𝗣𝗖𝗹𝗼𝘂𝗱.𝗦𝘆𝘀𝘁𝗲𝗺𝘀, we believe that true success is built on sustainable and transparent communication with our clients. We take immense pride in the fact that our very first client from 2013, along with all those who have contributed to our journey since then, continue to trust and collaborate with us to this day.Whether our clients are in 𝗘𝗴𝘆𝗽𝘁 𝗮𝗻𝗱 𝗦𝗮𝘂𝗱𝗶 𝗔𝗿𝗮𝗯𝗶𝗮
+This long-term commitment is a testament to our dedication to delivering excellence, fostering strong partnerships, and ensuring continuous value for our clients." 
+data-website="https://ERPCloud.Systems/" data-email="info@erpcloud.systems">
+     <div class="imglogo">
+      <img src="/files/erpcloud.png" alt="Partner Logo" style="width:160px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>ERPCloud.Systems</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-silver">SILVER</p>
+    </div>
+<!--about fill--20#################-->
+
+<div class="partner-card" data-name="Hard N soft consultancy" data-domain="Manufacturing,Services,Distribution,,Retail" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner We, at Hard n Soft Consultancy are an Indian based company who are focused on leveraging technology for the growth of your organization.
+
+
+
+Over the past 35 years, we have worked with amazing Manufacturing, Distribution and Service Industries.
+
+
+
+We are authorized partners of ERPNext, SAP Business One, Zoho and Boyum IT.
+
+
+
+We have ready solution for the following industries :
+
+1. Textiles :
+
+a. Yarn Manufacturing and Processing
+
+b. Greige Fabric Weaving / Knitting
+
+c. Dyeing / Printing/ Digital Printing
+
+d. Value Addition such as Embroidery etc.
+
+e. Apparel Manufacturing
+
+
+
+2. Solar Panel Manufacturing :
+
+Complete Manufacturing & Distribution of Solar Panels
+
+We also have Industry specific Addon Apps for various industries such as etc. These Apps automate the data capturing for business processes. They not only smoothen the operations of the ERP but also extend it to suit it to your specific industry or business.
+
+
+
+You can connect with us on :
+
+
+Call : +91 9904411154 / +91 99044 64000
+
+WhatsApp : +91 9377778878
+
+email : sk@hnsindia.com, sailesh.khawani@gmail.com
+" 
+data-website="https://www.hnsindia.com/" data-email="sk@hnsindia.com">
+      <div class="imglogo">
+      <img src="/files/hard n.png" alt="Partner Logo" style="width:160px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Hard N soft consultancy</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--21#################-->
+
+<div class="partner-card" data-name="Sanskar Technolab Private Limited" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner The Certified ERPNext Partner and global consulting firm, having huge experience in ERP Implementation with 40+ ERP experts, serving a variety of industry verticals to a broad spectrum of industrial niches, covering 30+ countries.
+
+Our digitization strategy makes your business more personal and customer-centric, our digital access used as a tool to deepen relationships with clients.
+
+Feel free to connect for more detail - Kirit Gajera, kirit@sanskartechnolab.com"
+ data-website="https://sanskartechnolab.com/" data-email="kamal@sanskartechnolab.com">
+      <div class="imglogo">
+      <img src="/files/sansker1.jpg" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Sanskar Technolab Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--22#################-->
+
+<div class="partner-card" data-name="Midocean Technologies Private Limited" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner Midocean Technologies is a premier provider of ERPNext solutions, offering comprehensive expertise across various industries, with a specialized focus in manufacturing. Headquartered in Ahmedabad, Gujarat, we excel in implementing and customizing ERPNext, an advanced open-source ERP system designed to streamline and enhance business processes across sectors.
+
+Our dedicated professionals have significant experience in addressing the distinctive challenges faced by businesses in multiple industries, notably manufacturing, retail, healthcare, textiles, and more. We place particular emphasis on manufacturing, delivering solutions that effectively manage production planning, inventory control, quality assurance, and supply chain optimization.
+
+Core services provided by Midocean Technologies include:
+
+- Customized ERPNext implementations across industries, especially manufacturing
+
+- Development of industry-specific ERPNext modules
+
+- Integration and automation to enhance productivity and efficiency
+
+- Comprehensive training and ongoing support to ensure successful ERP adoption
+
+Committed to innovation, excellence, and customer satisfaction, Midocean Technologies has consistently enabled businesses from diverse sectors, with a strong track record of success in the manufacturing domain, to achieve greater operational efficiency and sustainable growth."
+ data-website="https://midocean.tech" data-email="sagar@midocean.tech">
+      <div class="imglogo">
+      <img src="/files/midocean.png" alt="Partner Logo" style="width:160px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Midocean Technologies Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--23#################-->
+
+<div class="partner-card" data-name="Acube Innovations Private Limited" data-domain="Manufacturing,Services,Retail" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner Acube Innovations, established in 2011, is a leading technology solutions provider specializing in ERP implementation, customization, and support. With over a decade of expertise, we have successfully delivered tailored solutions across industries such as manufacturing, logistics, healthcare, and public services. Our core strength lies in developing custom web and mobile applications using frameworks like Spring Boot, Angular, Flutter, and Laravel. We offer end-to-end services, including business process automation, data migration, and seamless system integration. Headquartered in Kochi, India, with a presence in the UAE, Acube Innovations delivers innovative, scalable solutions that drive business efficiency and growth."
+data-website="https://www.acubeinnovations.com/" data-email="sales@acube.co">
+     <div class="imglogo">
+      <img src="/files/acube.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Acube Innovations Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--24#################-->
+
+<div class="partner-card" data-name="Finbyz Tech Pvt Ltd" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner At Finbyz Tech, we are passionate about revolutionizing businesses through latest technology. We build scalable and innovative software solutions that streamlines your business processes efficiently. We value collaboration and strive to create a positive working environment by celebrating innovation. We believe Information Technology can play significant role in improving productivity. IT can reduce the cost of operations by significantly improving human productivity. We are working on ERPNext platform since more than 10 years now and have completed more than 100+ Projects. Having Prominent experience working with Manufacturing Industries and providing solution through ERPNext." 
+data-website="https://finbyz.tech/" data-email="support@finbyz.tech">
+     <div class="imglogo">
+      <img src="/files/FinByz-Tech-2.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Finbyz Tech Pvt Ltd</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--25#################-->
+
+<div class="partner-card" data-name="Momscode Technologies Private Limited" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner MOMSCODE is a nimble boutique inspired by the massive advancement to bring a new business model specifically tailored to its clients focused on Business Applications.
+
+
+
+Momscode's vision is to bring digital to every organization and support their business to increase profitability through Business Process re-engineering, Functional Consultancy, Implementation & Customization of ERP solutions. Momscode's core competency is in Manufacturing, Services, and Retail.
+" 
+data-website="http://www.momscode.in/" data-email="shaiju.am@momscode.in">
+      <div class="imglogo">
+      <img src="/files/momscode_logo_11012024.png" alt="Partner Logo" style="width:180px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Momscode Technologies Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--26#################-->
+
+<div class="partner-card" data-name="Matiyas Solutions LLP" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner We are an enthusiastic and energetic establishment dedicated to bringing automation and transforming business processes digitally. With a vision to eliminate the lack of advanced technologies for modern industries, Matiyas is thriving as an ERP and Business Automation Company. We understand the value of technological advancements for increasing productivity and enhancing quality, and our in-house teams of dedicated professionals offer various services to achieve this objective effectively.
+
+At Matiyas, our mission remains as Startups And SMEs can leverage the benefits of evolving emerging technologies and optimize their processes digitally. We offer End-To-End ERP and other industry-grade IT Solutions to help businesses survive, scale, and succeed through Digital Transformation." 
+data-website="https://www.matiyas.com/" data-email="business@matiyas.com">
+      <div class="imglogo">
+      <img src="/files/matiyas-logo.png" alt="Partner Logo" style="width:160px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Matiyas Solutions LLP</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--27#################-->
+
+<div class="partner-card" data-name="Apex Enterprise Software Technologies Private Limited" data-domain="Manufacturing,Education,Services,Distribution,Retail" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner At FOSS ERP, we enable our clients with the magic of exceptional customer service and the power of open-source. We do few projects and we do them well.
+
+We have helped organisations in India, Singapore, Germany, Sweden and the USA to leverage ERPNext and Frappe Framework to scale their businesses.
+
+We have implemented ERPNext in businesses in Manufacturing, Distribution, Services, Retail and Non-profits domains.
+
+Check out the blogs published by our consultants and developers.
+
+Click here to follow us on LinkedIn ." 
+data-website="https://fosserp.com" data-email="hello@fosserp.com">
+      <div class="imglogo">
+      <img src="/files/apex.png" alt="Partner Logo" style="width:120px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Apex Enterprise Software Technologies Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--28#################-->
+
+<div class="partner-card" data-name="Anther Technologies Pvt Ltd" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner Your Data Works for You! Manage your Enterprise with ERP for Manufacturing, Services, Retail, Distribution, Healthcare, Education, Non-profit Organisations and more through Anther Technologies Pvt Ltd, a fourteen-year-old IT, ERP, Cloud, and IT Security consulting Company in Kochi, India. Anther Technologies employs a robust team and a meticulously designed process, enhanced by technology, contributing to overall business excellence.
+
+Some of our esteemed clients are Manufacturing Companies, Travel Companies, Education Institutes, Services Companies, Startups, Non-Profits, and Retail companies worldwide.
+
+We are a small team with highly collaborative, agile approaches and tools to assure the best returns on your investment." 
+data-website="https://www.anther.tech/" data-email="mathew@anther.tech">
+      <div class="imglogo">
+      <img src="/files/anther-logo.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Anther Technologies Pvt Ltd</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--29#################-->
+
+<div class="partner-card" data-name="Exacuer Global Services Private Limited" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner At Exacuer Global, we combine the power of open-source technology with exceptional customer service to deliver unparalleled results. Focused on quality over quantity, we undertake select projects and execute them with precision and excellence.
+
+As a Certified ERPNext Partner, we have enabled businesses across Manufacturing, Distribution, Services, Retail, and Non-Profit sectors to scale and thrive using ERPNext and the Frappe Framework.
+
+Our mission is to transform businesses by implementing innovative, tailored solutions that drive efficiency, foster growth, and create lasting impact. Choose Exacuer Global for expertise you can trust and results that speak for themselves." 
+data-website="https://exacuer.com/" data-email="ganesh@exacuer.com">
+      <div class="imglogo">
+      <img src="/files/exacuer.png" alt="Partner Logo" style="width:170px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Exacuer Global Services Private Limited</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--30#################-->
+
+<div class="partner-card" data-name="Eternal Enterprise Technologies" data-domain="Manufacturing,Services,Distribution,Retail,Education" data-country="India" data-tier="Bronze"
+data-about="Official Frappe Partner Eternal Enterprise Technologies specializes in delivering tailored ERPNext and Frappe solutions to streamline operations and drive growth. With over 80 successful projects across industries like manufacturing, mining, retail and financial services, we bring expertise in implementation, customization, and integrations.
+
+Our client-centric approach, flexible payment models, and skilled team make us a trusted partner for businesses seeking reliable ERP solutions. Simplify your processes and unlock potential with Eternal Enterprise Technologies." 
+data-website="https://www.eternaltechs.in" data-email="contact@eternaltechs.in">
+      <div class="imglogo">
+      <img src="/files/Eternal.png" alt="Partner Logo" style="width:160px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Eternal Enterprise Technologies</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--31#################-->
+
+<div class="partner-card" data-name="Technovate Solutions" data-domain="Services" data-country="India" data-tier="Bronze" 
+data-about="Official Frappe Partner NA" data-website="https://www.technovate.in" data-email="NA">
+      <div class="imglogo">
+      <img src="/files/Technovate Only with Logo.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Technovate Solutions</h3>
+      <p>🇮🇳 India</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--32#################-->
+
+<div class="partner-card" data-name="Pointershub Limited" data-domain="Manufacturing,Services,Distribution,Retail,Agriculture" data-country="Kenya" data-tier="Bronze" 
+data-about="Official Frappe Partner Pointershub Limited is a start-up company based in Kenya, that is focused on getting technology work for the companies. Our mission is to help Businesses Grow by provision of timely and innovative ICT business solutions and to achieve business re-engineering through improved Information Technology infrastructure and processes.
+
+Our team has worked with amazing businesses, non-profits, corporates and government agencies in Kenya. We enable companies to focus on their business and bring efficiency and transformation through effective technology." 
+data-website="https://pointershub.com/" data-email="chris@pointershub.com">
+      <div class="imglogo">
+      <img src="/files/Pointershub logo transparent .png" alt="Partner Logo" style="width:180px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Pointershub Limited</h3>
+      <p>🇰🇪 Kenya</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--33#################-->
+
+<div class="partner-card" data-name="Tasker Systems Inc." data-domain="Manufacturing,Services,Distribution,Retail" data-country="Philippines" data-tier="Bronze" 
+data-about="Official Frappe Partner Tasker Systems believes that any business, no matter how small, can compete with the best in the world using technology. At Tasker, we are dedicated to upgrading small and medium sized business with G-Suite, Chrome devices and ERPNext, which are designed to increase productivity and eliminate inefficiencies. While we are always excited about new technologies, we believe that technology is ultimately a tool that should help businesses grow. With our team that counts Uber, Honestbee and HP among its relevant experiences and clients, we nimbly seek out to solve the toughest business problems that Philippines businesses face today.
+
+Tasker partners with small and medium sized businesses (SMBs) in the Southeast Asia and Australia region to make them the best of the rest. Specializes in implementing and customizing ERPNext by Frappe and Google Workspace." 
+data-website="http://www.tasker.ph" data-email="consult@tasker.ph">
+     <div class="imglogo">
+      <img src="/files/tasker logo-color-2021 (1).png" alt="Partner Logo" style="width:100px;height:60px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Tasker Systems Inc.</h3>
+      <p>🇵🇭 Philippines</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--34#################-->
+
+<div class="partner-card" data-name="Agile Technica" data-domain="Manufacturing,Services,Distribution,Retail,Agriculture,Healthcare" data-country="Indonesia" data-tier="Bronze" 
+data-about="Official Frappe Partner Agile Technica is a modern and ambitious IT Consulting company who aims to work with business and help them realize their optimal efficiencies with the help of cutting-edge technologies. With our Expertise in ERP (ERPNext), Software Engineering and Cloud Technologies we will bring success to our customers. Our experiences in implementing Agile Methodology will also guide you to a successful Digital Transformation." 
+data-website="https://www.agiletechnica.com/" data-email="marketing@agiletechnica.com">
+    <div class="imglogo">
+      <img src="/files/agile.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Agile Technica</h3>
+      <p>🇮🇩 Indonesia</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--35#################-->
+
+<div class="partner-card" data-name="K&K Software AG" data-domain="Manufacturing,Services,Retail,Education" data-country="Germany" data-tier="Bronze" 
+data-about="Official Frappe Partner We offer professional ERPNext consulting services to implement the open-source ERP system in medium-sized businesses.
+
+K&K Software AG is one of the leading ERPNext providers in the German-speaking DACH region, serving numerous clients in Germany, Luxembourg, Austria, and Switzerland. As a trusted digitalization partner, we support a wide range of companies in the SME and industrial sectors, as well as public institutions, organizations, and associations." 
+data-website="https://erp-beratung.team" data-email="schmitt@kk-software.de">
+     <div class="imglogo">
+      <img src="/files/k&k.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>K&K Software AG</h3>
+      <p>🇩🇪 Germany</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--36#################-->
+
+<div class="partner-card" data-name="Phamos GmbH" data-domain="Services" data-country="Germany" data-tier="Bronze" 
+data-about="Official Frappe Partner " data-website="https://phamos.eu/home" data-email="post@phamos.eu">
+      <div class="imglogo">
+      <img src="/files/phamos-sun.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Phamos GmbH</h3>
+      <p>🇩🇪 Germany</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--37#################-->
+
+<div class="partner-card" data-name="LS RDC NH" data-domain="Services" data-country="Congo - Kinshasa" data-tier="Bronze" 
+data-about="Official Frappe Partner " data-website="https://ls-rdc.com/accueil" data-email="NA">
+      <div class="imglogo">
+      <img src="/files/ls-logo.jpg" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>LS RDC NH</h3>
+      <p>🇨🇩 Congo - Kinshasa</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--38#################-->
+
+<div class="partner-card" data-name="Smart Solutions" data-domain="Manufacturing,Services,Distribution,Retail,Education" data-country="Egypt" data-tier="Bronze" 
+data-about="Official Frappe Partner Smart Solution Co. understands the strategic importance of the solution and initiative and the substantial benefits ERPNext will bring to you. and we will endeavor to study the requirements thoroughly, with the aim of building great confidence to you that we are able to support your needs." 
+data-website="https://smartsoleg.com" data-email="info@smartsoleg.com ">
+      <div class="imglogo">
+      <img src="/files/Smart.png" alt="Partner Logo" style="width:150px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Smart Solutions</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--39#################-->
+
+<div class="partner-card" data-name="Accurate Systems" data-domain="Manufacturing,Services,Distribution,Education" data-country="Saudi Arabia" data-tier="Bronze" 
+data-about="Official Frappe Partner Accurate Systems provides ERP consultancy, implementation, and customization services on ERPNext, with a focus on ERP Solutions for Small and mid-sized enterprises." 
+data-website="https://accuratesystems.com.sa/" data-email="info@accuratesystems.com.sa">
+      <div class="imglogo">
+      <img src="/files/accurate.png" alt="Partner Logo" style="width:150px;height:130px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Accurate Systems</h3>
+      <p>🇸🇦 Saudi Arabia</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--40#################-->
+
+<div class="partner-card" data-name="Smart Scientific Systems Ltd - SSS" data-domain="Manufacturing,Education,Services,Distribution,Retail" data-country="Iraq" data-tier="Bronze" 
+data-about="Official Frappe Partner SSS (Smart Scientific Systems LTD) is a team of enthusiastic ERPNext developers and business experts who are dedicated to contribution of development of operations in companies and factories through the deployment of ERPNext in their operations, the company is based in Iraq & Jordan, and has gone through many successful implementation for different types of businesses and operations." 
+data-website="https://www.sss-me.com" data-email="info@sss-me.com">
+     <div class="imglogo">
+      <img src="/files/sss.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Smart Scientific Systems Ltd - SSS</h3>
+      <p>🇮🇶 Iraq</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+
+<!--about fill--41#################-->
+
+<div class="partner-card" data-name="Xurpas Inc" data-domain="Services" data-country="Philippines" data-tier="Bronze" 
+data-about="Official Frappe Partner Established in November 26, 2001 with only PhP 62500, Xurpas Inc. has grown into the largest publicly listed consumer technology company in the Philippines.
+
+Originally founded as a content provider to telecommunications operators, we now offer a complete portfolio of products and services ranging from mobile casual games, messaging, web & mobile application development, enterprise solutions and systems architecture to HR services technology platforms.
+
+On December 2, 2014, we listed in the Philippine Stock Exchange (PSE:X) to expand our reach in Southeast Asia." 
+data-website="https://xurpasgroup.com/" data-email="jv@xurpas.com">
+     <div class="imglogo">
+      <img src="/files/Xurpas Logo.png" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Xurpas Inc</h3>
+      <p>🇵🇭 Philippines</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--42#################-->
+
+<div class="partner-card" data-name="Go-Live Solutions" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Egypt" data-tier="Bronze" 
+data-about="Official Frappe Partner Welcome to Go-Live Solutions, your trusted ERPNext partner in Egypt specializing in a comprehensive suite of services tailored to meet your enterprise resource planning needs. With a dedicated team of experts and a proven track record, we are committed to helping your organization thrive through seamless ERP solutions.
+
+
+At Go-Live Solutions, we understand that implementing an ERP system is a critical step for any business, and it requires careful planning and execution. Our range of services encompasses every aspect of ERPNext, ensuring that your journey from concept to Go-Live is smooth and successful.
+
+
+Our Services Include:
+
+
+
+Implementation: We excel in guiding you through the entire implementation process, from defining your requirements to configuring the system to meet your unique business needs.
+
+Bug Fix: Our team is adept at identifying and resolving any issues that may arise, ensuring your ERPNext system functions flawlessly.
+
+Warranty: We offer comprehensive warranty services, giving you peace of mind that your ERP system is covered in case of unexpected issues.
+
+Support: Our support team is available to assist you with any questions or concerns, ensuring you have reliable assistance whenever you need it.
+
+Upgrade: We help you stay up-to-date with the latest ERPNext features and improvements through seamless upgrade services.
+
+Training: Our training programs are designed to empower your team with the knowledge and skills needed to maximize the benefits of ERPNext.
+
+Consultation: Our experts provide strategic guidance and consultation to help you make informed decisions about your ERP system.
+
+Data Migration: We facilitate the smooth transfer of your existing data into ERPNext, ensuring data integrity and continuity.
+
+Customization: Tailoring ERPNext to your specific needs is our forte. We provide custom development and configuration services to optimize your system.
+
+Installation: We handle the installation process, ensuring that ERPNext is set up correctly and efficiently.
+
+Configuration: We fine-tune the system settings to align with your business processes and requirements.
+
+Development: Our developers are skilled in creating custom features and functionalities to enhance your ERPNext experience.
+
+Integrations: We seamlessly integrate ERPNext with other applications and systems, streamlining your workflow and data flow.
+
+Hosting: We offer reliable hosting services to ensure your ERPNext system is always available and performing at its best.
+
+
+At Go-Live Solutions, we are dedicated to your success, and we take pride in our ability to transform your ERP vision into a reality. With our extensive experience and commitment to excellence, you can trust us to be your ERPNext partner of choice. Let us help you optimize your business processes, drive efficiency, and achieve your goals through the power of ERPNext." 
+data-website="https://www.golive-solutions.com/ERPNext" data-email="erpnext.egypt@golive-solutions.com">
+      <div class="imglogo">
+      <img src="/files/Go-Live Solutions Logo 1.jpg" alt="Partner Logo" style="width:100px;height:100px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Go-Live Solutions</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--43#################-->
+
+<div class="partner-card" data-name="Prestige Saudi Company Ltd" data-domain="Manufacturing,Services,Distribution,Retail" data-country="Saudi Arabia" data-tier="Bronze" 
+data-about="Official Frappe Partner Prestige Saudi Co. Ltd is a software and system integration company powered by seasoned professionals. It is a part of DLI IT group, headquartered in Dubai. The company has offices in Riyadh, Dammam and Jeddah. Specialized in HR and Payroll Management, Security and Surveillance solutions. We have a proven track record with over 3000 successful installations in the Kingdom. The strength of our competency lies in our strong software development and technical support team that strives to match the unique requirements of the clients. To ensure we provide our clients with only the best of the best. We have partnered with international brands like Nitgen, Pyrescom, Hanvon, Matrix, Locktronix, eMudhra, Viewpoint, Humly, Viewsonic etc." 
+data-website="https://www.dlisaudi.com/solutions/erpnext/" data-email="shyju@dlisaudi.com">
+     <div class="imglogo">
+      <img src="/files/Prestige Logo.png" alt="Partner Logo" style="width:130px;height:110px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Prestige Saudi Company Ltd</h3>
+      <p>🇸🇦 Saudi Arabia</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--44#################-->
+
+<div class="partner-card" data-name="Ebkar Technology and Management Solutions" data-domain="Manufacturing,Services,Distribution,Retail" data-country="Libya" data-tier="Bronze" 
+data-about="Official Frappe Partner Ebkar Technology and Management Solutions helping organizations reach their goals and achieve greater effectiveness through a wide range of high-quality services including consultancy, training, ERP implementation, data networking and buildings security solutions." 
+data-website="https://www.ebkartms.com" data-email="sales@ebkartms.com">
+     <div class="imglogo">
+      <img src="/files/ebkar.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Ebkar Technology and Management Solutions</h3>
+      <p>🇱🇾 Libya</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--45#################-->
+
+<div class="partner-card" data-name="ERP Champions Ltd" data-domain="Manufacturing,Education,Distribution,Retail" data-country="Uganda" data-tier="Bronze" 
+data-about="Official Frappe Partner ERP Champions Ltd is a company that was established in 2020, with a focus on providing expert assistance to businesses looking to optimize their resource management. ERP Champions' team works to tailor solutions to the specific needs of each business, resulting in an efficient and streamlined work process.
+
+As the official ERPNext partner in Uganda, the company offers a software solution that is reliable, flexible and adaptable to the ever-changing business environment." 
+data-website="https://erpchampions.com" data-email="info@erpchampions.com">
+      <div class="imglogo">
+      <img src="/files/ERPChampions Logo.png" alt="Partner Logo" style="width:170px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>ERP Champions Ltd</h3>
+      <p>🇺🇬 Uganda</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--46#################-->
+
+<div class="partner-card" data-name="Axentor, LLC" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Egypt" data-tier="Bronze" 
+data-about="Official Frappe Partner Our team's expertise is rooted in delivering & managing Complex Software Projects & products.
+
+Since establishment we embraced the official partnership with Frappe. We proud ourselves to be the first Certified partner in Egypt.
+
+In Essence we are hacking ERPNext implementation projects with agility & mutual trust." 
+data-website="https://Axentor.co" data-email="accounts@axentor.co">
+      <div class="imglogo">
+      <img src="/files/Axentor_co_erpnext_logo.jpg" alt="Partner Logo" style="width:130px;height:110px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Axentor, LLC</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--47#################-->
+
+<div class="partner-card" data-name="Data Value" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Egypt" data-tier="Bronze" 
+data-about="Official Frappe Partner Headquartered in Egypt, Data Value is your trusted ERPNext partner, empowering businesses worldwide to unlock their true potential through data-driven digital transformation. We specialize in expertly implementing and tailoring ERPNext solutions, going beyond standard setups to deliver measurable value and actionable insights that enhance decision-making.
+
+Our core philosophy centers on building lasting, transparent partnerships grounded in a deep understanding of our clients' unique needs across the globe. Our comprehensive, end-to-end services include strategic consultation, seamless implementation, tailored customization, data migration, robust ongoing support, and specialized training.
+
+Choose Data Value to leverage dedicated expertise and a collaborative approach focused on ensuring your ERPNext system streamlines operations, drives efficiency, and fuels sustainable growth for your organization, wherever you operate.
+
+Explore the success stories of the diverse clients who trust Data Value and see the impactful results we achieve together through partnership:
+
+https://www.datavalue.solutions/our-clients" 
+data-website="https://www.datavalue.solutions" data-email="info@datavaluenet.net">
+      <div class="imglogo">
+      <img src="/files/datavalue.png" alt="Partner Logo" style="width:130px;height:130px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Data Value</h3>
+      <p>🇪🇬 Egypt</p>
+      
+  </div>
+<!--about fill--48#################-->
+
+<div class="partner-card" data-name="Invento Software Limited" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Bangladesh" data-tier="Bronze" 
+data-about="Official Frappe Partner Invento is a team of highly experienced professionals with a proven track record in developing software solutions that ease business processes through innovative change. With a multi-industry track record, Invento has catered to Hospitality, Banking, Government agencies, Real Estate and many other industries since its inception. Specialized in providing ERPNext and POS solutions.
+Invento has also built Cloud Solutions, Websites and Mobile Apps. Along with that, Invento has also served clients from the back end to ensure a smooth transition in delivering digital solutions.
+
+Since 2015, we have been implementing ERPNext in Bangladesh and Internationally. We have completed 50+ implementations in different industries like Distribution, Retail, Manufacturing, Services, E-Commerce etc.
+
+We are the backbone of multiple software companies that are also implementing ERPNext locally and globally." 
+data-website="https://invento.com.bd" data-email="munim@invento.com.bd">
+     <div class="imglogo">
+      <img src="/files/invento.png" alt="Partner Logo" style="width:160px;height:75px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Invento Software Limited</h3>
+      <p>🇧🇩 Bangladesh</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--1#################-->
+
+<div class="partner-card" data-name="Addons LLC" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail" data-country="United Arab Emirates" data-tier="Bronze" 
+data-about="Official Frappe Partner ADDON-S LLC was incorporated in Dubai, United Arab Emirates (UAE) in 2020, which owes its legacy to the erstwhile Amends Accounting & Bookkeeping LLC.
+which has been operating successfully, serving over 200 clients all over the UAE since 2017. The fields of operations of Amends Accounting included bookkeeping, financial accounting, and tax management, of small and medium business entities. On par with the tax regime of the UAE, the promoters of Amends Accounting identified the potential scope of augmenting the financial auditing, tax advisory and
+Enterprise Resource Planning (ERP). Accordingly, Amends Accounting & Bookkeeping underwent an inevitable transformation, spreading the wings of professional expertise to two decisive portfolios, i.e. Auditing and ERP Implementation. Sultan Fulad Auditing of Accounts LLC was incorporated with a view to distinctly managing external auditing of corporate entities, whereas Addon-S
+dedicates to cater to the ERP solutions of the business community in the UAE. The dynamic marketing team of Addon-s has been able to perform with promising market
+potential for ERPNext, thanks for its fundamental features of open-source, comprehension, etc. The team is constituted with skilled professionals well-versed in the implementation of ERPNext who can provide expert guidance and support. The implementation and functional team is keenly dedicated to assist the clients, ensuring a seamless user experience." 
+data-website="https://www.addon-s.com/" data-email="admin@addon-s.com">
+    <div class="imglogo">
+      <img src="/files/addons.png" alt="Partner Logo" style="width:100px;height:85px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Addons LLC</h3>
+      <p>🇦🇪 United Arab Emirates</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--2#################-->
+
+<div class="partner-card" data-name="Beveren Software Inc" data-domain="Manufacturing,Services,Distribution,Retail" data-country="United States" data-tier="Bronze" 
+data-about="Official Frappe Partner Beveren Software Inc, a trusted ERPNext Partner, helps businesses streamline operations and boost performance with cost-effective, tailored solutions. Backed by an experienced team, we deliver results that meet the unique needs of every client." 
+data-website="https://beverensoftware.com" data-email="info@beverensoftware.com">
+      <div class="imglogo">
+      <img src="/files/beveren.png" alt="Partner Logo" style="width:170px;height:110px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Beveren Software Inc</h3>
+      <p>🇺🇸 United States</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--3#################-->
+
+<div class="partner-card" data-name="Alyf GmbH" data-domain="Manufacturing,Services,Distribution,Retail" data-country="Germany" data-tier="Bronze" 
+data-about="Official Frappe Partner ALYF (pronounced “alive”) is a leading expert for ERPNext and the Frappe Framework in Germany.
+We’ve used our consulting and software development capabilities for
+building an industry solution based on ERPNext, implemented ERPNext for multiple small companies, built a custom management system for a large non-profit organization, integrated with DATEV and other common German software, and much more. Our employees are among the top contributors to ERPNext and the Frappe Framework.
+We are enthusiastic about ERPNext and our customers with their individual requirements and situations.
+Contact us for a free video call to get to know us and discuss possible cooperations." 
+data-website="https://alyf.de" data-email="hallo@alyf.de">
+     <div class="imglogo">
+      <img src="/files/ALYF.png" alt="Partner Logo" style="width:130px;height:70px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Alyf GmbH</h3>
+      <p>🇩🇪 Germany</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--4#################-->
+
+<div class="partner-card" data-name="Dynamic Business Solution" data-domain="Manufacturing,Education,Services,Distribution,Healthcare,Retail,Agriculture" data-country="Egypt" data-tier="Bronze" 
+data-about="Official Frappe Partner We are an Egyptian software company dedicated to providing companies with the latest and most advanced technology solutions. With a focus on innovation and customer satisfaction, the company offers a wide range of software products and services designed to streamline operations, increase efficiency, and drive growth. whether a medium company or a large corporation, we have the experience and resources to help companies of all sizes achieve their goals and reach new heights. With a team of highly skilled developers and support staff, the company delivers first-class solutions that are customized to meet the unique needs of each customer. whether it is developing custom software, implementing an existing product, or providing ongoing maintenance and support to our customers, we work to deliver results that exceed expectations." 
+data-website="https://dynamiceg.com/" data-email="Info@dynamiceg.com">
+     <div class="imglogo">
+      <img src="/files/dynamic.png" alt="Partner Logo" style="width:160px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Dynamic Business Solution</h3>
+      <p>🇪🇬 Egypt</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--5#################-->
+
+<div class="partner-card" data-name="SMB Solution for Computers" data-domain="Manufacturing,Services,Distribution,Healthcare,Retail" data-country="Kuwait" data-tier="Bronze" 
+data-about="Official Frappe Partner SMB Solution is the first and only certified bronze partner in Kuwait. We have been serving ERPNext and Frappe customers in the region for the past six years with over 100 successful implementations. Our clients are from Kuwait, UAE, India, and Saudi Arabia. We have served all industries, from retail, manufacturing, catering, and e-commerce, from our offices in Kuwait and India. Our services include consulting, implementation, ongoing support, and third-party software integration with ERPNext." 
+data-website="smbsolutionkwt.com" data-email="mustafa.ismail@smbsolutionkwt.com">
+     <div class="imglogo">
+      <img src="/files/smb.png" alt="Partner Logo" style="width:160px;height:90px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>SMB Solution for Computers</h3>
+      <p>🇰🇼 Kuwait</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--6#################-->
+
+<div class="partner-card" data-name="ERPGulf" data-domain="Services,Distribution,Retail" data-country="Qatar" data-tier="Bronze" 
+data-about="Official Frappe Partner." data-website="https://greycube.in" data-email="NA">
+      <div class="imglogo">
+      <img src="/files/erpgulf.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>ERPGulf</h3>
+      <p>🇶🇦 Qatar</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--7#################-->
+
+<div class="partner-card" data-name="KINGSTECH SERVICES PTE LTD" data-domain="Services" data-country="Singapore" data-tier="Bronze" 
+data-about="Official Frappe Partner We are dedicated to transform business operations through our innovative ERP software solutions.
+
+Our robust system features an asset management module that integrates seamlessly with Zebra Technologies products, including RFID and barcode scanning devices, to streamline asset tracking processes. We provide advanced IoT monitoring solutions designed to offer real-time insights, enhancing operational efficiency and decision-making.
+
+Built on a low-code platform, our ERP system allows for rapid customization and scalability, catering to the unique needs of each business.
+
+At KINGSTECH, our mission is to provide reliable and effective tools that help businesses operate more smoothly and efficiently." 
+data-website="https://kingstech.com.sg/" data-email="jake@kingstech.com.sg">
+      <div class="imglogo">
+      <img src="/files/kingstech_logo.png" alt="Partner Logo" style="width:170px;height:85px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>KINGSTECH SERVICES PTE LTD</h3>
+      <p>🇸🇬 Singapore</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--8#################-->
+
+<div class="partner-card" data-name="Havenir Solutions Private Limited" data-domain="Manufacturing,Services,Distribution,Retail" data-country="Pakistan" data-tier="Bronze" 
+data-about="Official Frappe Partner At Havenir Solutions, we aren’t just another ERP solution provider, we’re your strategic
+partner in digital transformation. With over nine years of experience and a track record of
+100+ projects across diverse regions including Europe, the Middle East, Asia, and North
+America, our expertise is built on tangible, global success. With our global offices in
+Germany and Pakistan, we bring local insight to international challenges.
+
+We’ve successfully implemented 50+ ERP systems that streamline operations for
+manufacturing, trading, distribution, retail, and service industries, proving that technology,
+when done right, can be a game changer.
+
+Our journey is defined by a passion for innovation and a commitment to measurable impact.
+For example, our custom-built business intelligence tools have cut reporting times by 40%,
+and our automated financial reconciliation modules have slashed reconciliation efforts by
+half. These aren’t just numbers; they’re a testament to our relentless pursuit of operational
+excellence.
+
+As a certified ERP consultant and developer, we not only implement solutions but also
+empower your team through comprehensive training and mentorship. With over 200 users
+trained and a legacy of mentoring junior developers, we ensure that every solution is not
+only robust and scalable but also sustainable in the long run.
+
+Partner with us on the Frappe platform and experience how our tailored applications simplify
+workflows, enhance decision making, and drive your business forward. At Havenir Solutions,
+we turn complex challenges into clear, actionable strategies, ensuring that your business
+stays ahead of the curve in an ever-evolving digital landscape." 
+data-website="https://havenir.com/" data-email="info@havenir.com">
+      <div class="imglogo">
+      <img src="/files/Havenir.png" alt="Partner Logo" style="width:100px;height:80px">
+            <img src="/files/tick.png" alt="Partner Logo" style="width:50px;height:50px">
+            </div>
+      <h3>Havenir Solutions Private Limited</h3>
+      <p>🇵🇰 Pakistan</p>
+      <p class="tier-bronze">BRONZE</p>
+    </div>
+<!--about fill--9#################-->
+
+ </div>
+</div>
+<hr style="height:2px;border-width:0;color:teal;background-color:teal">
+<hr style="height:2px;border-width:0;color:teal;background-color:teal">
+<hr style="height:2px;border-width:0;color:teal;background-color:teal">
+<hr style="height:2px;border-width:0;color:white;background-color:white">
+<center>
+ <div class="footer">
+        <div class="logo">Frappe </div>
+
+        <div class="social-icons">
+             <a href="https://twitter.com/frappetech" title="Twitter">
+                <img src="/files/twiter.png" alt="Twitter">
+            </a>
+            <a href="https://in.linkedin.com/company/frappe-technologies" title="LinkedIn">
+                <img src="/files/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/frappetech/" title="Instagram">
+                <img src="/files/insta.jpg" alt="Instagram">
+            </a>
+            <a href="https://github.com/frappe" title="GitHub">
+                <img src="/files/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.youtube.com/@frappetech" title="YouTube">
+                <img src="/files/youtube.png" alt="YouTube">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="https://frappe.io/sitemap">Contents</a>
+            <a href="https://frappe.io/products">Products</a>
+            <a href="https://frappe.io/partners">Partners</a>
+            <a href="https://frappe.io/quality-and-information-security">Certifications</a>
+            <a href="https://frappe.io/contact">Contact</a>
+            <a href="https://frappe.io/terms">Terms</a>
+        </div>
+
+        <div class="quote">
+            “The best way to predict the future is to invent it.” – Alan Kay
+        </div>
+    </div>
+    </center>
+
+  <!-- Full screen overlay -->
+  <div class="details-overlay" id="detailsOverlay">
+    <div class="details-content">
+      <span class="close-btn" id="closeOverlay" onclick="closeOverlay">&times;</span>
+      <h2 id="partnerName"></h2>
+      <p><strong>Country:</strong> <span id="partnerCountry"></span></p>
+      <p><strong>Tier:</strong> <span id="partnerTier"></span></p>
+      <p><strong>About:</strong> <span id="partnerAbout"></span></p>
+      <p><strong>Website:</strong> <a href="#" id="partnerWebsite" target="_blank"></a></p>
+      <p><strong>Email:</strong> <span id="partnerEmail"></span></p>
+    </div>
+  </div>
+
+  <script>
+  
+
+  // Search bar logic
+  document.getElementById('search-bar').addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const container = document.getElementById('partners-container');
+    const cards = Array.from(container.getElementsByClassName('partner-card'));
+
+    const matched = [];
+    const unmatched = [];
+
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name').toLowerCase();
+      if (name.includes(searchValue)) {
+        matched.push(card);
+      } else {
+        unmatched.push(card);
+      }
+    });
+
+    // Rebuild the list: matched first, then unmatched
+    container.innerHTML = '';
+    matched.concat(unmatched).forEach(card => container.appendChild(card));
+  });
+
+  // Filter logic
+  const domainFilter = document.getElementById("domainFilter");
+  const countryFilter = document.getElementById("countryFilter");
+  const tierFilter = document.getElementById("tierFilter");
+  const partnerCards = document.querySelectorAll(".partner-card");
+
+  function filterPartners() {
+    const selectedDomain = domainFilter.value;
+    const selectedCountry = countryFilter.value;
+    const selectedTier = tierFilter.value;
+
+    partnerCards.forEach(card => {
+      const domains = card.getAttribute("data-domain").split(",").map(d => d.trim()); // Split and trim domains
+      const country = card.getAttribute("data-country");
+      const tier = card.getAttribute("data-tier");
+
+      // Check if selected domain is "All" or included in the card's domains
+      const matchDomain = selectedDomain === "All" || domains.includes(selectedDomain);
+      const matchCountry = selectedCountry === "All" || selectedCountry === country;
+      const matchTier = selectedTier === "All" || selectedTier === tier;
+
+      // Show card only if all filters match
+      card.style.display = (matchDomain && matchCountry && matchTier) ? 'block' : 'none';
+    });
+  }
+
+  // Attach event listeners to filters
+  domainFilter.addEventListener("change", filterPartners);
+  countryFilter.addEventListener("change", filterPartners);
+  tierFilter.addEventListener("change", filterPartners);
+
+  // Overlay logic
+  const overlay = document.getElementById("detailsOverlay");
+  const closeBtn = document.getElementById("closeOverlay");
+
+  const partnerName = document.getElementById("partnerName");
+  const partnerCountry = document.getElementById("partnerCountry");
+  const partnerTier = document.getElementById("partnerTier");
+  const partnerAbout = document.getElementById("partnerAbout");
+  const partnerWebsite = document.getElementById("partnerWebsite");
+  const partnerEmail = document.getElementById("partnerEmail");
+
+  partnerCards.forEach(card => {
+    card.addEventListener("click", () => {
+      partnerName.textContent = card.dataset.name;
+      partnerCountry.textContent = card.dataset.country;
+      partnerTier.textContent = card.dataset.tier;
+      partnerAbout.textContent = card.dataset.about;
+      partnerWebsite.textContent = card.dataset.website;
+      partnerWebsite.href = card.dataset.website;
+      partnerEmail.textContent = card.dataset.email;
+
+      overlay.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
