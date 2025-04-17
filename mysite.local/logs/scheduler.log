@@ -1,0 +1,517 @@
+2025-04-08 06:53:35,536 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-08 06:53:35,562 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for mysite.local
+2025-04-08 06:53:35,565 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-08 06:53:35,569 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for mysite.local
+2025-04-08 06:53:35,576 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for mysite.local
+2025-04-08 06:53:35,581 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-08 06:53:35,586 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-08 06:53:35,597 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-08 06:53:35,636 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for mysite.local
+2025-04-08 06:53:35,641 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-08 06:53:35,645 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-08 06:53:35,653 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-08 06:53:35,659 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-08 06:53:35,663 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for mysite.local
+2025-04-08 06:53:35,685 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-08 06:53:35,688 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for mysite.local
+2025-04-08 06:53:35,698 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-08 06:53:35,706 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-08 06:53:35,710 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-08 06:53:35,713 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-08 06:53:35,717 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for mysite.local
+2025-04-08 06:53:35,722 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-08 06:53:35,726 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-08 06:53:35,733 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for mysite.local
+2025-04-08 06:53:35,737 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-08 06:53:35,740 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-08 06:53:35,744 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for mysite.local
+2025-04-08 06:53:35,753 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for mysite.local
+2025-04-08 06:53:35,757 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for mysite.local
+2025-04-08 06:53:35,764 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for mysite.local
+2025-04-08 06:53:35,771 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-08 06:53:35,779 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-08 06:53:35,788 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for mysite.local
+2025-04-08 06:53:35,794 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-08 06:53:35,803 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-09 10:47:41,351 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-09 10:47:41,613 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-09 10:47:41,651 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-09 10:47:41,765 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-09 10:47:41,796 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-09 10:47:41,800 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-09 10:47:41,855 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-09 10:47:41,909 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-10 10:31:40,103 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-10 10:31:40,164 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-10 10:31:40,189 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-10 10:31:40,203 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-10 11:47:15,911 ERROR scheduler Exception in Enqueue Events for Site mysite.local
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-04-12 15:25:01,586 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-12 15:25:02,238 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-12 15:25:02,248 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for mysite.local
+2025-04-12 15:25:02,280 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for mysite.local
+2025-04-12 15:25:02,286 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for mysite.local
+2025-04-12 15:25:02,314 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-12 15:25:02,325 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-12 15:25:02,394 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for mysite.local
+2025-04-12 15:25:02,422 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for mysite.local
+2025-04-12 15:25:02,459 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for mysite.local
+2025-04-12 15:25:02,470 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-12 15:25:02,489 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-12 15:25:02,505 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-12 15:25:02,977 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-12 15:25:03,008 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-12 15:25:03,122 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for mysite.local
+2025-04-12 15:25:03,185 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-12 15:25:03,245 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for mysite.local
+2025-04-12 15:25:03,266 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for mysite.local
+2025-04-12 15:25:03,271 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-12 15:25:03,274 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-12 15:25:03,277 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-12 15:25:03,317 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-12 15:25:05,197 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for mysite.local
+2025-04-12 15:25:05,239 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-12 15:25:05,256 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-12 15:25:05,265 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for mysite.local
+2025-04-12 15:25:05,290 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-12 15:25:05,316 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-13 11:19:45,558 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for mysite.local
+2025-04-13 11:19:45,654 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for mysite.local
+2025-04-13 11:19:45,674 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for mysite.local
+2025-04-13 11:19:45,702 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-13 11:19:45,712 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-13 11:19:45,725 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for mysite.local
+2025-04-13 11:19:45,735 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-13 11:19:45,758 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for mysite.local
+2025-04-13 11:19:45,778 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-13 11:19:45,800 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for mysite.local
+2025-04-13 11:19:45,814 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-13 11:19:45,833 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-13 11:19:45,857 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-13 11:19:45,864 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for mysite.local
+2025-04-13 11:19:45,878 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for mysite.local
+2025-04-13 11:19:45,886 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-13 11:19:45,957 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-13 11:19:45,973 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-13 11:19:46,001 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-13 11:19:46,015 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for mysite.local
+2025-04-13 11:19:46,020 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-13 11:19:46,028 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-13 11:19:46,037 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for mysite.local
+2025-04-13 11:19:46,048 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for mysite.local
+2025-04-13 11:19:46,062 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-13 11:19:46,082 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for mysite.local
+2025-04-13 11:19:46,118 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-13 11:19:46,186 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for mysite.local
+2025-04-13 11:19:46,227 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-13 11:19:46,261 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for mysite.local
+2025-04-13 11:19:46,280 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for mysite.local
+2025-04-13 11:19:46,311 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for mysite.local
+2025-04-13 11:19:46,326 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-13 11:19:46,336 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-13 11:19:46,341 ERROR scheduler Skipped queueing erpnext.accounts.utils.run_ledger_health_checks because it was found in queue for mysite.local
+2025-04-13 11:19:46,428 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for mysite.local
+2025-04-13 11:19:46,478 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-13 11:19:46,513 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for mysite.local
+2025-04-13 11:19:46,527 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for mysite.local
+2025-04-13 11:19:46,547 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-13 11:19:46,558 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-13 11:19:46,566 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_weekly because it was found in queue for mysite.local
+2025-04-13 11:19:46,588 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-13 11:19:46,595 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-13 11:19:46,604 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for mysite.local
+2025-04-13 11:19:46,614 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-13 11:19:46,635 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for mysite.local
+2025-04-13 11:20:46,861 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for mysite.local
+2025-04-13 11:20:46,866 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-13 11:20:46,880 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for mysite.local
+2025-04-13 11:20:46,892 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-13 11:20:47,022 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for mysite.local
+2025-04-13 11:20:47,108 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-13 11:20:47,202 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-13 11:20:47,230 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-13 11:20:47,275 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-13 11:20:47,348 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-13 11:20:47,359 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-13 11:20:47,398 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-13 11:20:47,411 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for mysite.local
+2025-04-13 11:20:47,421 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-13 11:20:47,435 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for mysite.local
+2025-04-13 11:20:47,450 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-13 11:20:47,471 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for mysite.local
+2025-04-13 11:20:47,540 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-13 11:20:47,550 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for mysite.local
+2025-04-13 11:20:47,593 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for mysite.local
+2025-04-13 11:21:48,609 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for mysite.local
+2025-04-13 11:21:48,705 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-13 11:21:48,966 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for mysite.local
+2025-04-13 11:21:49,004 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for mysite.local
+2025-04-13 11:21:49,267 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-13 11:21:49,478 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-13 11:21:49,737 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-14 07:40:50,748 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-14 07:40:50,848 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-14 07:40:50,862 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-14 07:40:50,919 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-14 07:40:51,022 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-14 08:33:10,702 ERROR scheduler Exception in Enqueue Events for Site mysite.local
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-04-14 14:49:01,184 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:49:01,422 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:49:01,466 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:50:01,608 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:50:01,653 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:50:01,691 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:51:01,812 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:51:01,815 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:51:01,849 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:52:01,940 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:52:01,945 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-14 14:52:02,165 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:52:02,218 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:53:02,261 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:53:02,266 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-14 14:53:02,325 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:53:02,348 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:54:02,480 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:54:02,490 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-14 14:54:02,528 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-14 14:54:02,545 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:55:02,955 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-14 14:55:03,024 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-14 14:56:03,140 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-14 14:56:03,155 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-14 14:56:03,172 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-15 10:41:46,616 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for mysite.local
+2025-04-15 10:41:46,861 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for mysite.local
+2025-04-15 10:41:46,871 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for mysite.local
+2025-04-15 10:41:46,881 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-15 10:41:46,910 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for mysite.local
+2025-04-15 10:41:46,919 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-15 10:41:46,930 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for mysite.local
+2025-04-15 10:41:46,936 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-15 10:41:46,943 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for mysite.local
+2025-04-15 10:41:46,958 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for mysite.local
+2025-04-15 10:41:46,971 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-15 10:41:46,980 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for mysite.local
+2025-04-15 10:41:46,995 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for mysite.local
+2025-04-15 10:41:47,005 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for mysite.local
+2025-04-15 10:41:47,024 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-15 10:41:47,028 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-15 10:41:47,033 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for mysite.local
+2025-04-15 10:41:47,048 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for mysite.local
+2025-04-15 10:41:47,059 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-15 10:41:47,082 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for mysite.local
+2025-04-15 10:41:47,088 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for mysite.local
+2025-04-15 10:41:47,096 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-15 10:41:47,103 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-15 10:41:47,109 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-15 10:41:47,121 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for mysite.local
+2025-04-15 10:41:47,128 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for mysite.local
+2025-04-15 10:41:47,132 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for mysite.local
+2025-04-16 09:23:37,581 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for mysite.local
+2025-04-16 20:01:35,543 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:01:36,072 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:01:36,147 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:01:36,283 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:01:36,302 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:01:36,352 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:01:36,363 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:01:36,370 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:01:36,388 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:01:36,418 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:01:36,437 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:01:36,460 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:01:36,468 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:01:36,474 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:01:36,508 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:01:36,515 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:01:36,518 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:01:36,522 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:01:36,553 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:01:36,558 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:01:36,569 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:01:36,591 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:01:36,594 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:02:37,225 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:02:38,046 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:02:38,081 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:02:38,093 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:02:38,150 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:02:38,167 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:02:38,234 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:02:38,312 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:02:38,350 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:02:38,392 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:02:38,576 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:02:38,647 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:02:38,694 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:02:38,721 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:02:38,729 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:02:38,760 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:02:38,793 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:02:38,824 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:02:38,843 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:02:38,884 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:02:38,978 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:02:39,002 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:02:39,056 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:03:39,969 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:03:40,077 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:03:40,113 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:03:40,222 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:03:40,230 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:03:40,278 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:03:40,311 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:03:40,331 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:03:40,346 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:03:40,405 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:03:40,414 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:03:40,445 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:03:40,495 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:03:40,557 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:03:40,671 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:03:40,755 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:03:40,784 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:03:40,792 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:03:40,915 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:03:40,963 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:03:41,147 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:03:41,217 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:03:41,388 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:04:41,584 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:04:41,591 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:04:41,604 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:04:41,610 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:04:41,617 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:04:41,630 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:04:41,646 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:04:41,649 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:04:41,654 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:04:41,673 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:04:41,677 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:04:41,692 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:04:41,705 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:04:41,709 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:04:41,715 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:04:41,719 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:04:41,724 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:04:41,731 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:04:41,756 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:04:41,763 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:04:41,776 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:04:41,800 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:04:41,812 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:05:42,101 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:05:42,226 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-16 20:05:42,337 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:05:42,350 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:05:42,368 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:05:42,381 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:05:42,398 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:05:42,403 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:05:42,423 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:05:42,427 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:05:42,468 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:05:42,478 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:05:42,489 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:05:42,510 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:05:42,515 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:05:42,522 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:05:42,530 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:05:42,541 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:05:42,556 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-16 20:05:42,561 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:05:42,577 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:05:42,619 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:05:42,635 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:05:42,646 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:05:42,656 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:06:42,777 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:06:42,782 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:06:42,799 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:06:42,806 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:06:42,810 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for mysite.local
+2025-04-16 20:06:42,813 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2025-04-16 20:06:42,827 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:06:42,866 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:06:42,877 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:06:42,886 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:06:42,893 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:06:42,928 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:06:42,935 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:06:42,947 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:06:42,955 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:06:42,960 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:06:42,966 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:06:42,974 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:06:42,980 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2025-04-16 20:06:42,986 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:06:42,991 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:06:42,996 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:06:43,003 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:07:43,096 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for mysite.local
+2025-04-16 20:07:43,135 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-16 20:07:43,139 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for mysite.local
+2025-04-16 20:07:43,158 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for mysite.local
+2025-04-16 20:07:43,167 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-16 20:07:43,176 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for mysite.local
+2025-04-16 20:07:43,203 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2025-04-16 20:07:43,215 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2025-04-16 20:07:43,222 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2025-04-16 20:07:43,229 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-16 20:07:43,236 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for mysite.local
+2025-04-16 20:07:43,245 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2025-04-16 20:07:43,248 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2025-04-16 20:07:43,251 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2025-04-16 20:07:43,253 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2025-04-16 20:07:43,258 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local
+2025-04-16 20:07:43,262 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2025-04-16 20:07:43,265 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for mysite.local
+2025-04-16 20:07:43,282 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for mysite.local
+2025-04-16 20:07:43,290 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2025-04-16 20:07:43,299 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2025-04-16 20:07:43,310 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2025-04-16 20:08:54,403 ERROR scheduler Exception in Enqueue Events for Site mysite.local
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.12/socket.py", line 837, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    ).run()
+      ^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 207, in sql
+    self.connect()
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/database.py", line 112, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+                                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/gopalan/frappe-bench/env/lib/python3.12/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-04-17 08:59:52,529 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2025-04-17 08:59:53,625 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2025-04-17 08:59:53,764 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2025-04-17 08:59:53,802 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for mysite.local
+2025-04-17 09:00:02,450 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for mysite.local

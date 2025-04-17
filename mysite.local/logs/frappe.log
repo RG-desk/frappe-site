@@ -1,0 +1,48 @@
+2025-04-08 07:13:52,014 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-62ee5068', 'cmd': 'frappe.client.delete'}
+2025-04-08 15:50:24,451 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-faa66bda', 'cmd': 'frappe.client.delete'}
+2025-04-08 15:50:26,025 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-faa66bda', 'cmd': 'frappe.client.delete'}
+2025-04-08 15:50:29,159 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-faa66bda', 'cmd': 'frappe.client.delete'}
+2025-04-10 10:34:39,727 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-058bcc89', 'cmd': 'frappe.client.delete'}
+2025-04-10 10:34:43,187 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'doctype': 'Builder Page', 'name': 'page-058bcc89', 'cmd': 'frappe.client.delete'}
+2025-04-13 15:28:12,039 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:28:48,855 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:30:18,063 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:30:51,226 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:31:46,049 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:32:27,020 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:33:20,370 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:35:05,272 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:35:54,355 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
+2025-04-13 15:39:26,058 ERROR frappe New Exception collected in error log
+Site: mysite.local
+Form Dict: {'is_private': '0', 'folder': 'Home', 'cmd': 'upload_file'}
